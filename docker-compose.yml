@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    entrypoint: /entrypoint.sh
+    command: ["serve-doc-public"]
+    ports:
+      - 8082:8082
+
+volumes:
+    postgres_data:

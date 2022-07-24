@@ -1,0 +1,22 @@
+site_name: UniFrame Documentation
+
+nav:
+  - Getting Started: index.md
+  - Terminology: terminology.md
+  - User Manual for Website users: manual.md
+  - User Manual for devlopers: manual-developer.md
+  - Release Note: release_note.md
+
+# we don't show api endpoint, since it will be in Swagger and only show up for login user
+#  - API endpoints: api_endpoints.md
+
+theme:
+  name: material
+  features:
+    - navigation.expand  
+  palette:
+    primary: blue
+
+markdown_extensions:
+    - toc:
+        permalink: "¶"
